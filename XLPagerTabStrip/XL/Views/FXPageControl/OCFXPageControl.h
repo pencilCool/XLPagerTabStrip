@@ -50,16 +50,16 @@ extern const CGPathRef FXPageControlDotShapeSquare;
 extern const CGPathRef FXPageControlDotShapeTriangle;
 
 
-@protocol FXPageControlDelegate;
+@protocol OCFXPageControlDelegate;
 
 
-IB_DESIGNABLE @interface FXPageControl : UIControl
+IB_DESIGNABLE @interface OCFXPageControl : UIControl
 
 - (void)setUp;
 - (CGSize)sizeForNumberOfPages:(NSInteger)pageCount;
 - (void)updateCurrentPageDisplay;
 
-@property (nonatomic, weak_delegate) IBOutlet id <FXPageControlDelegate> delegate;
+@property (nonatomic, weak_delegate) IBOutlet id <OCFXPageControlDelegate> delegate;
 
 @property (nonatomic, assign) IBInspectable NSInteger currentPage;
 @property (nonatomic, assign) IBInspectable NSInteger numberOfPages;
@@ -89,16 +89,16 @@ IB_DESIGNABLE @interface FXPageControl : UIControl
 @end
 
 
-@protocol FXPageControlDelegate <NSObject>
+@protocol OCFXPageControlDelegate <NSObject>
 @optional
 
-- (UIImage *)pageControl:(FXPageControl *)pageControl imageForDotAtIndex:(NSInteger)index;
-- (CGPathRef)pageControl:(FXPageControl *)pageControl shapeForDotAtIndex:(NSInteger)index;
-- (UIColor *)pageControl:(FXPageControl *)pageControl colorForDotAtIndex:(NSInteger)index;
+- (UIImage *)pageControl:(OCFXPageControl *)pageControl imageForDotAtIndex:(NSInteger)index;
+- (CGPathRef)pageControl:(OCFXPageControl *)pageControl shapeForDotAtIndex:(NSInteger)index;
+- (UIColor *)pageControl:(OCFXPageControl *)pageControl colorForDotAtIndex:(NSInteger)index;
 
-- (UIImage *)pageControl:(FXPageControl *)pageControl selectedImageForDotAtIndex:(NSInteger)index;
-- (CGPathRef)pageControl:(FXPageControl *)pageControl selectedShapeForDotAtIndex:(NSInteger)index;
-- (UIColor *)pageControl:(FXPageControl *)pageControl selectedColorForDotAtIndex:(NSInteger)index;
+- (UIImage *)pageControl:(OCFXPageControl *)pageControl selectedImageForDotAtIndex:(NSInteger)index;
+- (CGPathRef)pageControl:(OCFXPageControl *)pageControl selectedShapeForDotAtIndex:(NSInteger)index;
+- (UIColor *)pageControl:(OCFXPageControl *)pageControl selectedColorForDotAtIndex:(NSInteger)index;
 
 @end
 

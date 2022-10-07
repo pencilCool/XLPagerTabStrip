@@ -24,13 +24,13 @@
 // THE SOFTWARE.
 
 #import "XLTwitterPagerTabStripViewController.h"
-#import "FXPageControl.h"
+#import "OCFXPageControl.h"
 
 @interface XLTwitterPagerTabStripViewController ()
 
 @property (nonatomic) UIView * navigationView;
 @property (nonatomic) UIScrollView * navigationScrollView;
-@property (nonatomic) FXPageControl * navigationPageControl;
+@property (nonatomic) OCFXPageControl * navigationPageControl;
 @property (nonatomic, strong) NSMutableArray * navigationItemsViews;
 
 @end
@@ -110,10 +110,10 @@
     return _navigationItemsViews;
 }
 
--(FXPageControl *)navigationPageControl
+-(OCFXPageControl *)navigationPageControl
 {
     if (_navigationPageControl) return _navigationPageControl;
-    _navigationPageControl = [[FXPageControl alloc] init];
+    _navigationPageControl = [[OCFXPageControl alloc] init];
     [_navigationPageControl setBackgroundColor:[UIColor clearColor]];
     [_navigationPageControl setDotSize:3.8f];
     [_navigationPageControl setDotSpacing:4.0f];

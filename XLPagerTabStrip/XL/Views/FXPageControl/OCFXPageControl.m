@@ -30,7 +30,7 @@
 //  3. This notice may not be removed or altered from any source distribution.
 //
 
-#import "FXPageControl.h"
+#import "OCFXPageControl.h"
 
 
 #pragma GCC diagnostic ignored "-Wgnu"
@@ -53,18 +53,18 @@ const CGPathRef FXPageControlDotShapeTriangle = (const CGPathRef)3;
 
 @implementation NSObject (FXPageControl)
 
-- (UIImage *)pageControl:(__unused FXPageControl *)pageControl imageForDotAtIndex:(__unused NSInteger)index { return nil; }
-- (CGPathRef)pageControl:(__unused FXPageControl *)pageControl shapeForDotAtIndex:(__unused NSInteger)index { return NULL; }
-- (UIColor *)pageControl:(__unused FXPageControl *)pageControl colorForDotAtIndex:(__unused NSInteger)index { return nil; }
+- (UIImage *)pageControl:(__unused OCFXPageControl *)pageControl imageForDotAtIndex:(__unused NSInteger)index { return nil; }
+- (CGPathRef)pageControl:(__unused OCFXPageControl *)pageControl shapeForDotAtIndex:(__unused NSInteger)index { return NULL; }
+- (UIColor *)pageControl:(__unused OCFXPageControl *)pageControl colorForDotAtIndex:(__unused NSInteger)index { return nil; }
 
-- (UIImage *)pageControl:(__unused FXPageControl *)pageControl selectedImageForDotAtIndex:(__unused NSInteger)index { return nil; }
-- (CGPathRef)pageControl:(__unused FXPageControl *)pageControl selectedShapeForDotAtIndex:(__unused NSInteger)index { return NULL; }
-- (UIColor *)pageControl:(__unused FXPageControl *)pageControl selectedColorForDotAtIndex:(__unused NSInteger)index { return nil; }
+- (UIImage *)pageControl:(__unused OCFXPageControl *)pageControl selectedImageForDotAtIndex:(__unused NSInteger)index { return nil; }
+- (CGPathRef)pageControl:(__unused OCFXPageControl *)pageControl selectedShapeForDotAtIndex:(__unused NSInteger)index { return NULL; }
+- (UIColor *)pageControl:(__unused OCFXPageControl *)pageControl selectedColorForDotAtIndex:(__unused NSInteger)index { return nil; }
 
 @end
 
 
-@implementation FXPageControl
+@implementation OCFXPageControl
 
 - (void)setUp
 {	
@@ -362,7 +362,7 @@ const CGPathRef FXPageControlDotShapeTriangle = (const CGPathRef)3;
 	}
 }
 
-- (void)setDelegate:(id<FXPageControlDelegate>)delegate
+- (void)setDelegate:(id<OCFXPageControlDelegate>)delegate
 {
 	if (_delegate != delegate)
 	{
