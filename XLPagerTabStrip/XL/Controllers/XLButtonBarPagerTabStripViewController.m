@@ -183,7 +183,7 @@
     // If a XIB or storyboard hasn't been used we also need to register the cell reuseIdentifier
     // as well otherwise we'll get a crash when the code attempts to dequeue any cell's
     NSBundle * bundle = [NSBundle bundleForClass:[XLButtonBarView class]];
-    NSURL * url = [bundle URLForResource:@"XLPagerTabStrip" withExtension:@"bundle"];
+    NSURL * url = [bundle URLForResource:@"XLPagerTabStripOC" withExtension:@"bundle"];
     if (url){
         bundle =  [NSBundle bundleWithURL:url];
     }

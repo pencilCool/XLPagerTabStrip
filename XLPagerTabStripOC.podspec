@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
   s.ios.frameworks = 'UIKit', 'Foundation'
-  s.resource_bundles = { 'XLPagerTabStrip' => ['XLPagerTabStrip/XL/Views/ButtonCell.xib'] }
+  s.resource_bundles = { 'XLPagerTabStripOC' => ['XLPagerTabStrip/XL/Views/ButtonCell.xib'] }
 end
