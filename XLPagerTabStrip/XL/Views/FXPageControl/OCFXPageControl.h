@@ -45,9 +45,9 @@
 #endif
 
 
-extern const CGPathRef FXPageControlDotShapeCircle;
-extern const CGPathRef FXPageControlDotShapeSquare;
-extern const CGPathRef FXPageControlDotShapeTriangle;
+extern const CGPathRef OCFXPageControlDotShapeCircle;
+extern const CGPathRef OCFXPageControlDotShapeSquare;
+extern const CGPathRef OCFXPageControlDotShapeTriangle;
 
 
 @protocol OCFXPageControlDelegate;
