@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.authors  = { 'Martin Barreto' => 'martin@xmartlabs.com', 'Washington Miranda' => 'mirandaacevedo@gmail.com' }
   s.source   = { :git => 'https://github.com/xmartlabs/XLPagerTabStrip.git', :tag => s.version }
   s.source_files = 'XLPagerTabStrip/XL/**/*.{h,m}'
+  s.private_header_files = 'XLPagerTabStrip/XL/Views/FXPageControl/FXPageControl.h'
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
   s.ios.frameworks = 'UIKit', 'Foundation'
